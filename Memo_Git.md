@@ -1,4 +1,4 @@
-## **Mémo Git**
+mkdir del## **Mémo Git**
 Formattage : .md
 
 ---
@@ -12,13 +12,19 @@ Formattage : .md
 | TAB		| Complète le chemin par le début saisi|
 | pwd 		| affiche le chemin courant |
 | mkdir		| créer un dossier |
-| rm 		| supprimer un dossier |
+| rm 		| supprimer un fichier |
+| rm -r		| supprimer un dossier |
+| mv		| deplace un fichier |
 | echo "texte"	| affiche un texte |
 | touch 	| créer un fichier |
 | echo "lulu" >> toto.txt 	| Crée un fichier .txtnavec le texte lulu |
 | cp 		| copier |
 | mv 		| déplacer |
-| cat	xx.yy | affiche le contenu du fichier xx.yy|	
+| cat	xx.yy 	| affiche le contenu du fichier xx.yy|
+| cat *.* > toto.txt | met le contenu de tous les fichiers dans le fichier toto.txt |	
+| sed -n 3p *.* | affiche la 3ème ligne du contenu de tous les fichiers |
+| sed -i 's/REGEX_RECHERCHE/REMPLACEMENT/g' [Fichier] | pour rechercher et remplacer un contenu dans un fichier |
+| grep -rni 'dossier de recherche' -e 'expression à rechercher' | liste les fichiers qui contiennent l'expression |
 | clear		| Efface la console|
 | exit		| quit la console|
 
@@ -79,7 +85,7 @@ git add xx.yy	// mets à jour l'index avec le fichier xx.yy
 git commit -m "first commit" // Créé une version avec un commentaire
 git branch -M main  // créé la branche "Main"
 Créer sous GitHub le repository toto.lulu
-  // Créé le depot en ligne sur github. origin=chemin d'origine
+  // Créé le depot en git ligne sur github. origin=chemin d'origine
 git remote add origin https://github.com/stephane-chevrier/toto.lulu
 git push -u origin main  // pousse la branche main dans origin
 
@@ -112,5 +118,9 @@ git push --set-upstream origin main     //Pour pousser la branche courante et d�
 
 ## <Ins>**Pour enlever d'un commit un fichier qui génère un conflit au moment d'un push **</Ins>
 git restore --staged src/Main.java  // dans ce cas on eneleve le fichier Main.java
+
+## <Ins>**Pour afficher et changer le chemin de github **</Ins>
+git remote get-url origin
+git remote set-url origin https://github.com/stephane-chevrier/Repository
 
 
