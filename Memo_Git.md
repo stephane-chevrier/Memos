@@ -5,6 +5,8 @@ Formattage : .md
 ## <Ins>**Console Git Bash**</Ins>
 | Syntax | Description |
 | ------ | ----------- |
+|ssh utilisateur@xxx.xxx.xxx.xxx | se connecter à un serveur avec SSH |
+|passwd		| changement du password |
 | ls 		| afficher les fichers d’un dossier |
 | ls -la	| afficher les fichers d’un dossier verticalement |
 | cd 		| changer de dossier |
