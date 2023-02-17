@@ -1,4 +1,4 @@
-mkdir del## **Mémo Git**
+git branchmkdir del## **Mémo Git**
 Formattage : .md
 
 ---
@@ -124,5 +124,17 @@ git restore --staged src/Main.java  // dans ce cas on eneleve le fichier Main.ja
 ## <Ins>**Pour afficher et changer le chemin de github **</Ins>
 git remote get-url origin
 git remote set-url origin https://github.com/stephane-chevrier/Repository
+
+## <Ins>**Pour Créer un nouveau Repository sur GitLab à partir d'un dossier local existant**</Ins>
+Sous GitLab, créer un dossier vide
+git remote add originlab git@gitlab.com:stephane-chevrier/Repository // via une connexion type SSL
+git add .
+git commit -m "nom"
+git push -u originlab
+
+## <Ins>**Pour créer une branche et pousser son dossier locale sur cette branche **</Ins>
+git branch -M dev // branche appelée dev
+git push originlab dev // pousse la branche originlab sur la branche dev
+
 
 
