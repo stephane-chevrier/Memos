@@ -5,30 +5,37 @@ Formattage : .md
 ## <Ins>**Console Git Bash**</Ins>
 | Syntax | Description |
 | ------ | ----------- |
-|ssh utilisateur@xxx.xxx.xxx.xxx | se connecter à un serveur avec SSH |
-|passwd		| changement du password |
-| ls 		| afficher les fichers d’un dossier |
-| ls -la	| afficher les fichers d’un dossier verticalement |
-| cd 		| changer de dossier |
-| cd ~		| Revenir à la racine de l'utilisateur|
-| TAB		| Complète le chemin par le début saisi|
-| pwd 		| affiche le chemin courant |
-| mkdir		| créer un dossier |
-| rm 		| supprimer un fichier |
-| rm -r		| supprimer un dossier |
-| mv		| deplace un fichier |
-| echo "texte"	| affiche un texte |
-| touch 	| créer un fichier |
+|ssh utilisateur@xxx.xx.xx.xx | se connecter à un serveur avec SSH |
+|passwd				| changement du password |
+| xxxx.xxxx$(date +%Y%m%d) 	| rajoute la date aaaammdd dans le nom du fichier |
+| ls 					| afficher les fichers d’un dossier |
+| ls -la				| afficher les fichers d’un dossier verticalement |
+| cd xxxx				| changer de dossier |
+| cd ~				| Revenir à la racine de l'utilisateur.|
+| TAB					| Complète le chemin par le début saisi|
+| pwd 				| affiche le chemin courant |
+| mkdir				| créer un dossier |
+| rm 					| supprimer un fichier |
+| rm -r				| supprimer un dossier |
+| mv					| deplace un fichier |
+| echo "texte"			| affiche un texte |
+| touch 				| créer un fichier |
 | echo "lulu" >> toto.txt 	| Crée un fichier .txtnavec le texte lulu |
-| cp 		| copier |
-| mv 		| déplacer |
-| cat	xx.yy 	| affiche le contenu du fichier xx.yy|
-| cat *.* > toto.txt | met le contenu de tous les fichiers dans le fichier toto.txt |	
-| sed -n 3p *.* | affiche la 3ème ligne du contenu de tous les fichiers |
+| cp 					| copier |
+| mv 					| déplacer |
+| cat	xx.yy 			| affiche le contenu du fichier xx.yy|
+| cat *.* > toto.txt 		| met le contenu de tous les fichiers dans le fichier toto.txt |	
+| find . -name '*hp.*' -print | rechercher tous les fichiers dont le nom contient hp dans le répertoire courant et sous-dossier|
+| sed -n 3p *.* 			| affiche la 3ème ligne du contenu de tous les fichiers |
 | sed -i 's/REGEX_RECHERCHE/REMPLACEMENT/g' [Fichier] | pour rechercher et remplacer un contenu dans un fichier |
-| grep -rni 'dossier de recherche' -e 'expression à rechercher' | liste les fichiers qui contiennent l'expression |
-| clear		| Efface la console|
-| exit		| quit la console|
+| grep -rni 'dossier' -e 'expression' | liste les fichiers qui contiennent l'expression |
+| clear				| Efface la console|
+| Ports réservés 			| 20-21:FTP 22:SSH/SCP 53:DNS 80:HTTP 443:HTTPS 3306:mysql |
+| sudo ufw status verbose 	| Affiche l'état actuel des règles du firewall|
+| sudo ufw enable ou disable 	| active ou desactive le firewall |
+| sudo ufw allow 53 		| ouvre le port 53 |
+| sudo ufw default allow 	| Autoriser le trafic entrant suivant les règles par défaut |
+| exit				| quit la console|
 
 
 | Option 	| Description |
@@ -68,7 +75,7 @@ Git-it : Application qui permet d'apprendre à utiliser Git & GitHub
 | git push <remote> <branche> |permet d'envoyer tous les commits d'une branche au dépôt distant.|
 | git pull		| Récupère la version du dépo distant|
 | git pull <remote> <branche>| récupère la branche du depot distant|
-| git checkout <commit> | Pour voir le projet avant le précédent commit|
+| -r | Pour voir le projet avant le précédent commit|
 | git reset		| A voir, très nombreuses possibilités. ne jamais utiliser après avoir publié (push)|
 | git branch -M main	| Pour/créer une branche, en l'occurence main|
 | git remote add origin https://github.com/stephane-chevrier/memo-git.git|
