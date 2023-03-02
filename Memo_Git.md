@@ -34,7 +34,13 @@ Formattage : .md
 | sudo ufw status verbose 	| Affiche l'état actuel des règles du firewall|
 | sudo ufw enable ou disable 	| active ou desactive le firewall |
 | sudo ufw allow 53 		| ouvre le port 53 |
-| sudo ufw default allow 	| Autoriser le trafic entrant suivant les règles par défaut |
+| sudo l 	| Autoriser le trafic entrant suivant les règles par défaut |
+| utiliser apt dans la console, apt-get dans un script |
+| apt update			| Mets à jour la liste des paquets|
+| apt list --installed        | Liste des paquets installés |
+| apt upgrade 			| Mets à jour les paquets|
+| apt install xxxx		| install le paquet xxxxxx|
+| apt autoremove xxxx --purge | Désisntall le paquet (logiciel) xxxx ainsi que ses dépendances et ces fichiers de configuration|
 | exit				| quit la console|
 
 
