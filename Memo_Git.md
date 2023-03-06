@@ -22,7 +22,8 @@ Formattage : .md
 | touch 				| créer un fichier |
 | echo "lulu" >> toto.txt 	| Crée un fichier .txtnavec le texte lulu |
 | cp 					| copier |
-| mv 					| déplacer |
+| mv fichier repertoire		| déplacer |
+| mv fichier fichier2		| renome le fichier en fichier2|
 | cat	xx.yy 			| affiche le contenu du fichier xx.yy|
 | cat *.* > toto.txt 		| met le contenu de tous les fichiers dans le fichier toto.txt |	
 | find . -name '*hp.*' -print | rechercher tous les fichiers dont le nom contient hp dans le répertoire courant et sous-dossier|
@@ -35,12 +36,18 @@ Formattage : .md
 | sudo ufw enable ou disable 	| active ou desactive le firewall |
 | sudo ufw allow 53 		| ouvre le port 53 |
 | sudo l 	| Autoriser le trafic entrant suivant les règles par défaut |
+| env					| liste les variables d'environnement|
+| netstat -an 			| liste les applications instalées|
 | utiliser apt dans la console, apt-get dans un script |
 | apt update			| Mets à jour la liste des paquets|
 | apt list --installed        | Liste des paquets installés |
 | apt upgrade 			| Mets à jour les paquets|
 | apt install xxxx		| install le paquet xxxxxx|
 | apt autoremove xxxx --purge | Désisntall le paquet (logiciel) xxxx ainsi que ses dépendances et ces fichiers de configuration|
+| ps -u				| Affiche les processus de l'utilisateur, -ef pour tous les processus|
+| lsof -i tcp:22			| Affiche les processus qui utilisent le port 22|
+| pstree -p				| Affiche l'intégralité des processus avec une représentation graphique|
+| ss -
 | exit				| quit la console|
 
 
