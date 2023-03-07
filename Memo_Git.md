@@ -1,4 +1,4 @@
-git branchmkdir del## **Mémo Git**
+lsof git branchmkdir del## **Mémo Git**
 Formattage : .md
 
 ---
@@ -37,7 +37,7 @@ Formattage : .md
 | sudo ufw allow 53 		| ouvre le port 53 |
 | sudo l 	| Autoriser le trafic entrant suivant les règles par défaut |
 | env					| liste les variables d'environnement|
-| netstat -an 			| liste les applications instalées|
+| netstat -an 			| liste les applications installées|
 | utiliser apt dans la console, apt-get dans un script |
 | apt update			| Mets à jour la liste des paquets|
 | apt list --installed        | Liste des paquets installés |
@@ -47,7 +47,7 @@ Formattage : .md
 | ps -u				| Affiche les processus de l'utilisateur, -ef pour tous les processus|
 | lsof -i tcp:22			| Affiche les processus qui utilisent le port 22|
 | pstree -p				| Affiche l'intégralité des processus avec une représentation graphique|
-| ss -
+| tail -f /var/log/syslog     | Affichage dynamique du fichier log du systeme|
 | exit				| quit la console|
 
 
