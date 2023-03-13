@@ -56,7 +56,7 @@ Formattage : .md
 |– help	| liste des options|
 
 
----
+---git g
 ## <Ins>**Ressources**</Ins>
 Git-it : Application qui permet d'apprendre à utiliser Git & GitHub
 [petit guide](https://rogerdudler.github.io/git-guide/index.fr.html)
@@ -85,12 +85,15 @@ Git-it : Application qui permet d'apprendre à utiliser Git & GitHub
 | git remote rm <alias> | supprime un depot distant|
 | git clone /github...	| Pour créer une copie dans le repertoire courant de votre dépôt local; username@host:/chemin |
 | git push		| Pour les envoyer à votre dépôt distant|
-| git push <remote> <branche> |permet d'envoyer tous les commits d'une branche au dépôt distant.|
+
 | git pull		| Récupère la version du dépo distant|
 | git pull <remote> <branche>| récupère la branche du depot distant|
 | -r | Pour voir le projet avant le précédent commit|
 | git reset		| A voir, très nombreuses possibilités. ne jamais utiliser après avoir publié (push)|
-| git branch -M main	| Pour/créer une branche, en l'occurence main|
+| git branch -M main	| Pour créer une branche master, en l'occurence main|
+| git branch dev	| Pour créer une branche, en l'occurence dev|
+| git checkout dev	| Pour basculer sur une branche, en l'occurence dev|
+| git push origin <branche> |permet d'envoyer tous les commits d'une branche au dépôt distant qui s'appelle origin.|
 | git remote add origin https://github.com/stephane-chevrier/memo-git.git|
 | git rm 		| Supprime des fichiers de l'arborescence de travail et de l'index|
 
