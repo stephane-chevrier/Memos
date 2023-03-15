@@ -85,10 +85,12 @@ Git-it : Application qui permet d'apprendre à utiliser Git & GitHub
 | git remote rm <alias> | supprime un depot distant|
 | git clone /github...	| Pour créer une copie dans le repertoire courant de votre dépôt local; username@host:/chemin |
 | git push		| Pour les envoyer à votre dépôt distant|
-
 | git pull		| Récupère la version du dépo distant|
-| git pull <remote> <branche>| récupère la branche du depot distant|
-| -r | Pour voir le projet avant le précédent commit|
+| git pull <remote> <branche>| récupère la branche du depot distant <remote>|
+| git status		| Affiche les différences entre le dépot local et le depot distant|
+| git remote xxx.xxx	| Reviens à la dernière version du dépot distant du fichier xxx.xxx|
+| git log		| Affiche l'historique des commits|
+| git log -p -2		| Affiche l'historique des commits en visualisant les 2 dernières différences|
 | git reset		| A voir, très nombreuses possibilités. ne jamais utiliser après avoir publié (push)|
 | git branch -M main	| Pour créer une branche master, en l'occurence main|
 | git branch dev	| Pour créer une branche, en l'occurence dev|
