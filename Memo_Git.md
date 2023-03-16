@@ -74,8 +74,6 @@ Git-it : Application qui permet d'apprendre à utiliser Git & GitHub
 | git config color.ui true			| utiliser des couleurs dans la sortie de git|
 | git init		| Activez Git pour un repertoire (dans ce cas le répertoire courant) |
 | get init --bare	| Cette option permet de préciser que ce dossier ne contiendra pas de dossier de travail mais seulement l'historique de notre projet. Ces dossiers --bare peuvent être utilisés comme dépôt distant.|
-| git status    	| Vérifiez l'état des modifications dans un dépôt |
-| git log		| Afficher l'historique du projet |
 | git diff 		| Afficher les modifications apportés aux fichiers |
 | git add <FILENAME>	| Ajouter à l'index les modifications d'un fichier à soumettre. |
 | git add .		| Pour ajouter toutes les modifications d'un seul coup. [A proscrire quand on travaille à plusieurs] |
