@@ -56,7 +56,7 @@ Formattage : .md
 |– help	| liste des options|
 
 
----git g
+---
 ## <Ins>**Ressources**</Ins>
 Git-it : Application qui permet d'apprendre à utiliser Git & GitHub
 [petit guide](https://rogerdudler.github.io/git-guide/index.fr.html)
