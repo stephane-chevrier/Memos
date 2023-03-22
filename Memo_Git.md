@@ -1,4 +1,4 @@
-lsof git branchmkdir del## **Mémo Git**
+## **Mémo Git**
 Formattage : .md
 
 ---
@@ -8,52 +8,52 @@ Formattage : .md
 |ssh utilisateur@xxx.xx.xx.xx | se connecter à un serveur avec SSH |
 |passwd				| changement du password |
 | xxxx.xxxx$(date +%Y%m%d) 	| rajoute la date aaaammdd dans le nom du fichier |
-| ls 					| afficher les fichers d’un dossier |
-| ls -la				| afficher les fichers d’un dossier verticalement |
-| cd xxxx				| changer de dossier |
-| cd ~				| Revenir à la racine de l'utilisateur.|
-| TAB					| Complète le chemin par le début saisi|
+| ls 				| afficher les fichers d’un dossier |
+| ls -la			| afficher les fichers d’un dossier verticalement |
+| cd xxxx			| changer de dossier |
+| cd ~ ou  cd			| Revenir à la racine de l'utilisateur.|
+| TAB				| Complète le chemin par le début saisi|
 | pwd 				| affiche le chemin courant |
 | mkdir				| créer un dossier |
-| rm 					| supprimer un fichier |
+| rm 				| supprimer un fichier |
 | rm -r				| supprimer un dossier |
-| mv					| deplace un fichier |
+| mv				| deplace un fichier |
 | echo "texte"			| affiche un texte |
-| touch 				| créer un fichier |
+| touch 			| créer un fichier |
 | echo "lulu" >> toto.txt 	| Crée un fichier .txtnavec le texte lulu |
-| cp 					| copier |
+| cp 				| copier |
 | mv fichier repertoire		| déplacer |
 | mv fichier fichier2		| renome le fichier en fichier2|
 | cat	xx.yy 			| affiche le contenu du fichier xx.yy|
 | cat *.* > toto.txt 		| met le contenu de tous les fichiers dans le fichier toto.txt |	
-| find . -name '*hp.*' -print | rechercher tous les fichiers dont le nom contient hp dans le répertoire courant et sous-dossier|
-| sed -n 3p *.* 			| affiche la 3ème ligne du contenu de tous les fichiers |
+| find . -name '*hp.*' -print 	| rechercher tous les fichiers dont le nom contient hp dans le répertoire courant et sous-dossier|
+| sed -n 3p *.* 		| affiche la 3ème ligne du contenu de tous les fichiers |
 | sed -i 's/REGEX_RECHERCHE/REMPLACEMENT/g' [Fichier] | pour rechercher et remplacer un contenu dans un fichier |
 | grep -rni 'dossier' -e 'expression' | liste les fichiers qui contiennent l'expression |
 | clear				| Efface la console|
-| Ports réservés 			| 20-21:FTP 22:SSH/SCP 53:DNS 80:HTTP 443:HTTPS 3306:mysql |
+| Ports réservés 		| 20-21:FTP 22:SSH/SCP 53:DNS 80:HTTP 443:HTTPS 3306:mysql |
 | sudo ufw status verbose 	| Affiche l'état actuel des règles du firewall|
 | sudo ufw enable ou disable 	| active ou desactive le firewall |
 | sudo ufw allow 53 		| ouvre le port 53 |
-| sudo l 	| Autoriser le trafic entrant suivant les règles par défaut |
-| env					| liste les variables d'environnement|
+| sudo l 			| Autoriser le trafic entrant suivant les règles par défaut |
+| env				| liste les variables d'environnement|
 | netstat -an 			| liste les applications installées|
 | utiliser apt dans la console, apt-get dans un script |
 | apt update			| Mets à jour la liste des paquets|
-| apt list --installed        | Liste des paquets installés |
+| apt list --installed        	| Liste des paquets installés |
 | apt upgrade 			| Mets à jour les paquets|
 | apt install xxxx		| install le paquet xxxxxx|
-| apt autoremove xxxx --purge | Désisntall le paquet (logiciel) xxxx ainsi que ses dépendances et ces fichiers de configuration|
+| apt autoremove xxxx --purge 	| Désisntall le paquet (logiciel) xxxx ainsi que ses dépendances et ces fichiers de configuration|
 | ps -u				| Affiche les processus de l'utilisateur, -ef pour tous les processus|
-| lsof -i tcp:22			| Affiche les processus qui utilisent le port 22|
-| pstree -p				| Affiche l'intégralité des processus avec une représentation graphique|
-| tail -f /var/log/syslog     | Affichage dynamique du fichier log du systeme|
+| lsof -i tcp:22		| Affiche les processus qui utilisent le port 22|
+| pstree -p			| Affiche l'intégralité des processus avec une représentation graphique|
+| tail -f /var/log/syslog     	| Affichage dynamique du fichier log du systeme|
 | exit				| quit la console|
 
 
 | Option 	| Description |
 | ------ 	| ----------- |
-|– help	| liste des options|
+|– help		git branch| liste des options|
 
 
 ---
@@ -90,11 +90,11 @@ Git-it : Application qui permet d'apprendre à utiliser Git & GitHub
 | git log		| Affiche l'historique des commits|
 | git log -p -2		| Affiche l'historique des commits en visualisant les 2 dernières différences|
 | git reset		| A voir, très nombreuses possibilités. ne jamais utiliser après avoir publié (push)|
+| git reset --hard &&&&&| Rétabli les fichiers locaux dans la version du commit &&&&& (git log pour identifier le commit souhaité. Attention efface toutes les modifications|
 | git branch -M main	| Pour créer une branche master, en l'occurence main|
-| git branch dev	| Pour créer une branche, en l'occurence dev|
+| git branch dev	| Pour créer une branche, en l'occurence dev|git check
 | git checkout dev	| Pour basculer sur une branche, en l'occurence dev|
-| git push origin <branche> |permet d'envoyer tous les commits d'une branche au dépôt distant qui s'appelle origin.|
-| git remote add origin https://github.com/stephane-chevrier/memo-git.git|
+| git push origin <branche> |permet d'envoyer tous les commits d'une branche au dépôt distant qui s'appelle origin.|reorigin 
 | git rm 		| Supprime des fichiers de l'arborescence de travail et de l'index|
 
 
