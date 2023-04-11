@@ -1,4 +1,4 @@
-## **Mémo Git**
+origin ## **Mémo Git**
 Formattage : .md
 
 ---
@@ -116,7 +116,7 @@ git push -u origin main  // pousse la branche main dans origin
 
 ## <Ins>**Comment créez un clone**</Ins>
 Se place dans le répertoire où on veut mettre le clone
-git clone https://github.com/stephane-chevrier/RepositorySouahité
+git clone https://github.com/stephane-chevrier/RepositorySouhaité
 cd NomProjet
 
 ## <Ins>**Mettre à jour le projet sur GitHub**</Ins>
