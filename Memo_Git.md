@@ -161,4 +161,7 @@ git branch -M dev // branche appelée dev
 git push originlab dev // pousse la branche originlab sur la branche dev
 
 
+## <Ins>**Pour supprimer le dernier commit localement et distant **</Ins>
+git reset HEAD~  // localement
+git push -f      // distant
 
