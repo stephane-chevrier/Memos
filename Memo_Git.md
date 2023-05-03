@@ -1,5 +1,4 @@
-
-git echo .gitignoreorigin ## **Mémo Git**
+## **Mémo Git**
 Formattage : .md
 
 ---
