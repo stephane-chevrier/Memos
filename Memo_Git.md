@@ -66,36 +66,37 @@ Git-it : Application qui permet d'apprendre à utiliser Git & GitHub
 
 ---
 ## <Ins>**Commandes Git**</Ins>
-| Syntax 		| Description |
-| ------ 		| ----------- |
+| Syntax 			| Description |
+| ----------------------| ----------- |
 | git config --global user.username <USerNamE>	| Ajoutez votre nom d'utilisateur GitHub à votre configuration Git |
 | git config --global user.username		| Affiche le nom d'utilisateur |
 | git config --global user.email "xxx@yyy"	| Ajoutez votre mail à votre configutation Git|
 | git config color.ui true			| utiliser des couleurs dans la sortie de git|
-| git init		| Activez Git pour un repertoire (dans ce cas le répertoire courant) |
-| get init --bare	| Cette option permet de préciser que ce dossier ne contiendra pas de dossier de travail mais seulement l'historique de notre projet. Ces dossiers --bare peuvent être utilisés comme dépôt distant.|
-| git diff 		| Afficher les modifications apportés aux fichiers |
+| git init			| Activez Git pour un repertoire (dans ce cas le répertoire courant) |
+| get init --bare		| Cette option permet de préciser que ce dossier ne contiendra pas de dossier de travail mais seulement l'historique de notre projet. Ces dossiers --bare peuvent être utilisés comme dépôt distant.|
+| git diff 			| Afficher les modifications apportés aux fichiers |
 | git add <FILENAME>	| Ajouter à l'index les modifications d'un fichier à soumettre. |
-| git add .		| Pour ajouter toutes les modifications d'un seul coup. [A proscrire quand on travaille à plusieurs] |
+| git add .			| Pour ajouter toutes les modifications d'un seul coup. [A proscrire quand on travaille à plusieurs] |
 | git commit -m "xxx"	| Pour soumettre les modifications que vous avez ajoutées avec un court message "xxx" |
 | git remote add <alias> <chemin/url> | Ajoute un nouveau dépôt distant|
 | git remote -v		| affiche toutes les listes de dépôts et leurs URL|
 | git remote rm <alias> | supprime un depot distant|
 | git clone /github...	| Pour créer une copie dans le repertoire courant de votre dépôt local; username@host:/chemin |
-| git push		| Pour les envoyer à votre dépôt distant|
-| git pull		| Récupère la version du dépo distant|
+| git push			| Pour les envoyer à votre dépôt distant|
+| git pull			| Récupère la version du dépo distant|
 | git pull <remote> <branche>| récupère la branche du depot distant <remote>|
 | git status		| Affiche les différences entre le dépot local et le depot distant|
 | git remote xxx.xxx	| Reviens à la dernière version du dépot distant du fichier xxx.xxx|
-| git log		| Affiche l'historique des commits|
+| git log			| Affiche l'historique des commits|
+| git log --oneline	| Affiche l'historique des commits sur une seule ligne|
 | git log -p -2		| Affiche l'historique des commits en visualisant les 2 dernières différences|
-| git reset		| A voir, très nombreuses possibilités. ne jamais utiliser après avoir publié (push)|
+| git reset			| A voir, très nombreuses possibilités. ne jamais utiliser après avoir publié (push)|
 | git reset --hard &&&&&| Rétabli les fichiers locaux dans la version du commit &&&&& (git log pour identifier le commit souhaité. Attention efface toutes les modifications|
 | git branch -M main	| Pour créer une branche master, en l'occurence main|
-| git branch dev	| Pour créer une branche, en l'occurence dev|git check
+| git branch dev		| Pour créer une branche, en l'occurence dev|git check
 | git checkout dev	| Pour basculer sur une branche, en l'occurence dev|
 | git push origin <branche> |permet d'envoyer tous les commits d'une branche au dépôt distant qui s'appelle origin.|reorigin 
-| git rm 		| Supprime des fichiers de l'arborescence de travail et de l'index|
+| git rm 			| Supprime des fichiers de l'arborescence de travail et de l'index|
 
 
 <Ins>**Pour ajouter un fichier au repository : add + commit**</Ins>
@@ -159,8 +160,7 @@ git push -u originlab
 git branch -M dev // branche appelée dev
 git push originlab dev // pousse la branche originlab sur la branche dev
 
-
 ## <Ins>**Pour supprimer le dernier commit localement et distant **</Ins>
-git reset HEAD~  // localement
-git push -f      // distant
+git reset HEAD~  ou git reset <commit>  	// localement
+git push -f      					// distant
 
