@@ -33,10 +33,9 @@ Formattage : .md
 | grep -rni 'dossier' -e 'expression' | liste les fichiers qui contiennent l'expression |
 | clear				| Efface la console|
 | Ports réservés 			| 20-21:FTP 22:SSH/SCP 53:DNS 80:HTTP 443:HTTPS 3306:mysql |
-| sudo ufw status verbose 	| Affiche l'état actuel des règles du firewall|
+| sudo ufw status verbose 	| Affiche l'état actuel des règles du firewall- nécessite installation ufw|
 | sudo ufw enable ou disable 	| active ou desactive le firewall |
 | sudo ufw allow 53 		| ouvre le port 53 |
-| sudo l 				| Autoriser le trafic entrant suivant les règles par défaut |
 | env					| liste les variables d'environnement|
 | netstat -an 			| liste les applications installées|
 | utiliser apt dans la console, apt-get dans un script |
