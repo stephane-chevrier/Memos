@@ -3,89 +3,102 @@ Formattage : .md
 
 ---
 ### <Ins>**Linux**</Ins>
-| Syntax                                               | Description                                                                                     |
-|------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| ssh utilisateur@xxx.xx.xx.xx                         | se connecter à un serveur avec SSH                                                              |
-| passwd			                                            | changement du password                                                                          |
-| xxxx.xxxx$(date +%Y%m%d) 	                           | rajoute la date aaaammdd dans le nom du fichier                                                 |
-| ls 				                                              | afficher les fichers d’un dossier                                                               |
-| ls -la			                                            | afficher les fichers d’un dossier verticalement                                                 |
-| cd xxxx			                                           | changer de dossier                                                                              |
-| cd ~ ou  cd			                                       | Revenir à la racine de l'utilisateur.                                                           |
-| TAB				                                              | Complète le chemin par le début saisi                                                           |
-| pwd 				                                             | affiche le chemin courant                                                                       |
-| mkdir				                                            | créer un dossier                                                                                |
-| rm 				                                              | supprimer un fichier                                                                            |
-| rm -r				                                            | supprimer un dossier                                                                            |
-| mv				                                               | deplace un fichier                                                                              |
-| echo "texte"			                                      | affiche un texte                                                                                |
-| touch 			                                            | créer un fichier                                                                                |
-| echo "lulu" >> toto.txt 	                            | Crée un fichier .txtnavec le texte lulu                                                         |
-| cp 				                                              | copier                                                                                          |
-| mv fichier repertoire		                              | déplacer                                                                                        |
-| mv fichier fichier2		                                | renome le fichier en fichier2                                                                   |
-| cat	xx.yy 			                                        | affiche le contenu du fichier xx.yy                                                             |
-| cat *.* > toto.txt 		                                | met le contenu de tous les fichiers dans le fichier toto.txt                                    |	
-| find . -name '*hp.*' -print 	                        | rechercher tous les fichiers dont le nom contient hp dans le répertoire courant et sous-dossier |
-| sed -n 3p *.* 		                                     | affiche la 3ème ligne du contenu de tous les fichiers                                           |
-| sed -i 's/REGEX_RECHERCHE/REMPLACEMENT/g' [Fichier]  | pour rechercher et remplacer un contenu dans un fichier                                         |
-| grep -rni 'dossier' -e 'expression'                  | liste les fichiers qui contiennent l'expression                                                 |
-| clear				                                            | Efface la console                                                                               |
-| Ports réservés 		                                    | 20-21:FTP 22:SSH/SCP 53:DNS 80:HTTP 443:HTTPS 3306:mysql                                        |
-| sudo ufw status verbose 	                            | Affiche l'état actuel des règles du firewall                                                    |
-| sudo ufw enable ou disable 	                         | active ou desactive le firewall                                                                 |
-| sudo ufw allow 53 		                                 | ouvre le port 53                                                                                |
-| sudo l 			                                           | Autoriser le trafic entrant suivant les règles par défaut                                       |
-| env				                                              | liste les variables d'environnement                                                             |
-| netstat -an 			                                      | liste les applications installées                                                               |
+| Syntax | Description                                                                                     |
+|----|-------------------------------------------------------------------------------------------------|
+| ssh utilisateur@xxx.xx.xx.xx | se connecter à un serveur avec SSH                                                              |
+| passwd | changement du password                                                                          |
+| xxxx.xxxx$(date +%Y%m%d) | rajoute la date aaaammdd dans le nom du fichier                                                 |
+| ls | afficher les fichers d’un dossier                                                               |
+| ls -la | afficher les fichers d’un dossier verticalement                                                 |
+| cd xxxx | changer de dossier                                                                              |
+| cd ~ ou  cd			 | Revenir à la racine de l'utilisateur.                                                           |
+| TAB				 | Complète le chemin par le début saisi                                                           |
+| pwd 				 | affiche le chemin courant                                                                       |
+| mkdir				 | créer un dossier                                                                                |
+| rm 				 | supprimer un fichier                                                                            |
+| rm -r				 | supprimer un dossier                                                                            |
+| mv				 | deplace un fichier                                                                              |
+| echo "texte"			 | affiche un texte                                                                                |
+| touch 			 | créer un fichier                                                                                |
+| echo "lulu" >> toto.txt 	 | Crée un fichier .txtnavec le texte lulu                                                         |
+| cp 				 | copier                                                                                          |
+| mv fichier repertoire		 | déplacer                                                                                        |
+| mv fichier fichier2		 | renome le fichier en fichier2                                                                   |
+| cat	xx.yy 			 | affiche le contenu du fichier xx.yy                                                             |
+| cat *.* > toto.txt 		 | met le contenu de tous les fichiers dans le fichier toto.txt                                    |	
+| find . -name '*hp.*' -print 	 | rechercher tous les fichiers dont le nom contient hp dans le répertoire courant et sous-dossier |
+| sed -n 3p *.* 		 | affiche la 3ème ligne du contenu de tous les fichiers                                           |
+| sed -i 's/REGEX_RECHERCHE/REMPLACEMENT/g' [Fichier] | pour rechercher et remplacer un contenu dans un fichier                                         |
+| grep -rni 'dossier' -e 'expression' | liste les fichiers qui contiennent l'expression                                                 |
+| clear				 | Efface la console                                                                               |
+| Ports réservés 		 | 20-21:FTP 22:SSH/SCP 53:DNS 80:HTTP 443:HTTPS 3306:mysql                                        |
+| sudo ufw status verbose 	 | Affiche l'état actuel des règles du firewall                                                    |
+| sudo ufw enable ou disable 	 | active ou desactive le firewall                                                                 |
+| sudo ufw allow 53 		 | ouvre le port 53                                                                                |
+| sudo l 			 | Autoriser le trafic entrant suivant les règles par défaut                                       |
+| env				 | liste les variables d'environnement                                                             |
+| netstat -an 			 | liste les applications installées                                                               |
 | utiliser apt dans la console, apt-get dans un script |
-| apt update			                                        | Mets à jour la liste des paquets                                                                |
-| apt list --installed        	                        | Liste des paquets installés                                                                     |
-| apt upgrade 			                                      | Mets à jour les paquets                                                                         |
-| apt install xxxx		                                   | install le paquet xxxxxx                                                                        |
-| apt autoremove xxxx --purge 	                        | Désisntall le paquet (logiciel) xxxx ainsi que ses dépendances et ces fichiers de configuration |
-| ps -u				                                            | Affiche les processus de l'utilisateur, -ef pour tous les processus                             |
-| lsof -i tcp:22		                                     | Affiche les processus qui utilisent le port 22                                                  |
-| pstree -p			                                         | Affiche l'intégralité des processus avec une représentation graphique                           |
-| tail -f /var/log/syslog     	                        | Affichage dynamique du fichier log du systeme                                                   |
-| exit				                                             | quit la console                                                                                 |
-| apt install figlet		                                 | figlet affiche un texte en tres gros caractères --> sympa !                                     |
+| apt update			 | Mets à jour la liste des paquets                                                                |
+| apt list --installed        	 | Liste des paquets installés                                                                     |
+| apt upgrade 			 | Mets à jour les paquets                                                                         |
+| apt install xxxx		 | install le paquet xxxxxx                                                                        |
+| apt autoremove xxxx --purge 	 | Désisntall le paquet (logiciel) xxxx ainsi que ses dépendances et ces fichiers de configuration |
+| ps -u				 | Affiche les processus de l'utilisateur, -ef pour tous les processus                             |
+| lsof -i tcp:22		 | Affiche les processus qui utilisent le port 22                                                  |
+| pstree -p			 | Affiche l'intégralité des processus avec une représentation graphique                           |
+| tail -f /var/log/syslog     	 | Affichage dynamique du fichier log du systeme                                                   |
+| exit				 | quit la console                                                                                 |
+| apt install figlet		 | figlet affiche un texte en tres gros caractères --> sympa !                                     |
 
 
 ---
-
-** Preparation installation Docker **
+### <Ins>**Preparation installation Docker**</Ins>
+| Syntax                                                                                                          | Description                                      |
+|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done | désinstaller tous les packages docker en conflit |
-| sudo apt update	| Mettre à jour les packages existant |
+| sudo apt update	                                                                                                | Mettre à jour les packages existant              |
 
 
-** Installation Docker **
-| Le mieux est d'aller sur le site docker pour prendre la commande qui correspond en fonction de son OS / linux |
-| sudo apt install apt-transport-https ca-certificates curl software-properties-common | installe quelques packages prérequis qui permettent aptd'utiliser des packages via HTTPS |
-| curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg | Ajoute ensuite la clé GPG du référentiel Docker officiel à votre système |
-| echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null | Ajoute le dépôt Docker aux sources APT |
-| sudo apt update	|
-| sudo apt install docker-ce 		| Installe Docker|
-| sudo systemctl status docker		| Verifie que le Docker fonctionne;  q pour quiter|
-| sudo usermod -aG docker username	| Ajoute username au docker groupe; evite de taper sudo a chaque fois |
-| groups				            | Liste les utilisateurs du groupe Docker |
+### <Ins>**Installation Docker**</Ins>
+| Syntax                                                                                                                                                                     | Description                                                                                                   |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| La Syntax correspond à Ubuntu                                                                                                                                              | Le mieux est d'aller sur le site docker pour prendre la commande qui correspond en fonction de son OS / linux |
+| sudo apt install apt-transport-https ca-certificates curl software-properties-common                                                                                       | installe quelques packages prérequis qui permettent aptd'utiliser des packages via HTTPS                      |
+| curl -fsSL https://download.docker.com/linux/ubuntu/gpg                                                                                                                    | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg                                          | Ajoute ensuite la clé GPG du référentiel Docker officiel à votre système |
+| echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null                                                      | Ajoute le dépôt Docker aux sources APT |
+| sudo apt update	                                                                                                                                                           |
+| sudo apt install docker-ce 		                                                                                                                                              | Installe Docker                                                                                               |
+| sudo systemctl status docker		                                                                                                                                             | Verifie que le Docker fonctionne;  q pour quiter                                                              |
+| sudo usermod -aG docker username	                                                                                                                                          | Ajoute username au docker groupe; evite de taper sudo a chaque fois                                           |
+| groups				                                                                                                                                                                 | Liste les utilisateurs du groupe Docker                                                                       |
 
-** Création Conteneur à partir d'une image **
-| docker run hello-world		| Télécharge l'image hello-world; permet de vérifier que le processus fonctionne bien |
-| docker run toto lulu			| Télécharge l'image lulu et crée un container associé toto |
-| docker run -d toto lulu		| Télécharge l'image lulu et crée un container associé toto en arrière plan |
+### <Ins>Création Conteneur à partir d'une image </Ins>
+| Syntax                   | Description                                                                         |
+|--------------------------|-------------------------------------------------------------------------------------|
+| docker run hello-world   | Télécharge l'image hello-world; permet de vérifier que le processus fonctionne bien |
+| docker run toto lulu     | Télécharge l'image lulu et crée un container associé toto                           |
+| docker run -d toto lulu  | Télécharge l'image lulu et crée un container associé toto en arrière plan           |
 
-** Gestion des images **
-| docker images 			| Affiche la liste des images téléchargées |
-| docker rmi toto			| Supprime l'image toto |
 
-** Arrêt conteneur **
-| docker stop toto			| Arrête le conteneur toto en-cours d'exécution |
-| docker start toto			| Démarre le conteneur toto arrêté |
+### <Ins>Gestion des images</Ins>
+| Syntax           | Description                              |
+|------------------|------------------------------------------|
+| docker images    | Affiche la liste des images téléchargées |
+| docker rmi toto  | Supprime l'image toto                    |
 
-** Suppression **
-| docker container prune		| Supprime tous les conteneurs arrêtés |
-| docker rm -f toto			| Supprime le conteneur toto en-cours d'exécution |
+### <Ins>Arrêt conteneur</Ins>
+| Syntax             | Description                                   |
+|--------------------|-----------------------------------------------|
+| docker stop toto   | Arrête le conteneur toto en-cours d'exécution |
+| docker start toto  | Démarre le conteneur toto arrêté              |
+
+
+### <Ins>Suppression</Ins>
+| Syntax                 | Description                                     |
+|------------------------|-------------------------------------------------|
+| docker container prune | Supprime tous les conteneurs arrêtés            |
+| docker rm -f toto      | Supprime le conteneur toto en-cours d'exécution |
 
 ** Affichage **
 | docker ps				| Affiche les conteneurs en-cours d'exécution |
